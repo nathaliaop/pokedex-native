@@ -33,12 +33,11 @@ export default function Login({}) {
           source={require("../../assets/illustrations/login-illustration.png")}
         />
         <Text style={styles.title}>
-          Explore e descubra{"\n"} o maravilhoso{"\n"} mundo Pokémon
+          Explore o{"\n"} mundo pokémon{"\n"} e se divirta
         </Text>
-        <Text style={styles.subtitle}>Temos que pegar!</Text>
         <TextInput
           style={styles.input}
-          placeholder="Nome do Treinador"
+          placeholder="Escreva seu nome"
           value={username}
           onChangeText={setUsername}
         />
@@ -54,7 +53,7 @@ export default function Login({}) {
 
 const styles = StyleSheet.create({
   layout: {
-    backgroundColor: Colors.white,
+    backgroundColor: Colors.lightpink,
     paddingHorizontal: Sizing.x50,
     paddingVertical: Sizing.x40,
     justifyContent: "center",
@@ -62,29 +61,22 @@ const styles = StyleSheet.create({
   },
   container: {},
   image: {
-    height: 150,
+    height: 350,
     width: "100%",
     resizeMode: "contain",
-    marginBottom: Sizing.x30,
   },
   title: {
     fontFamily: "Barlow_700Bold",
-    color: Colors.gray300,
+    color: Colors.wine,
     fontSize: 30,
-    textAlign: "center",
-  },
-  subtitle: {
-    fontFamily: "Barlow_500Medium",
-    color: Colors.gray500,
-    fontSize: 18,
     textAlign: "center",
     marginBottom: Sizing.x60,
   },
   input: {
-    backgroundColor: Colors.gray700,
-    borderRadius: Sizing.x10,
+    backgroundColor: Colors.mediumpink,
+    borderRadius: Sizing.x20,
     fontFamily: "Barlow_500Medium",
-    color: Colors.gray500,
+    color: Colors.wine,
     fontSize: 16,
     paddingVertical: Sizing.x20,
     paddingHorizontal: Sizing.x30,

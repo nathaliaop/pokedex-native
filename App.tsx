@@ -38,7 +38,7 @@ export default function App() {
   return (
     <UserProvider>
     <NavigationContainer>
-      <StatusBar style="auto" translucent={false} backgroundColor="white" />
+      <StatusBar style="auto" translucent={false} backgroundColor="#fec1c4" />
       <RootNavigator />
     </NavigationContainer>
   </UserProvider>
